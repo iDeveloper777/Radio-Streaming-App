@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splashBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="eZY-jb-DRW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splashAppName.png" translatesAutoresizingMaskIntoConstraints="NO" id="WhP-qR-LSe">
+                    <rect key="frame" x="67" y="564" width="240" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="RnS-XC-3pi"/>
+                        <constraint firstAttribute="height" constant="48" id="jXX-aM-Z6P"/>
+                    </constraints>
+                </imageView>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splashLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-g6-1Kj">
+                    <rect key="frame" x="97" y="196" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="KzG-Ur-ldK"/>
+                        <constraint firstAttribute="height" constant="180" id="tXb-2f-dxX"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splashCopyright.png" translatesAutoresizingMaskIntoConstraints="NO" id="t7Q-bJ-D7L">
+                    <rect key="frame" x="83" y="620" width="208" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="m3i-RV-fyr"/>
+                        <constraint firstAttribute="width" constant="208" id="p82-67-CM9"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eZY-jb-DRW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2rJ-I2-5qz"/>
+                <constraint firstItem="WhP-qR-LSe" firstAttribute="centerX" secondItem="3Ek-g6-1Kj" secondAttribute="centerX" id="KaU-PY-Tyh"/>
+                <constraint firstItem="t7Q-bJ-D7L" firstAttribute="top" secondItem="WhP-qR-LSe" secondAttribute="bottom" constant="8" symbolic="YES" id="NGM-S7-r4W"/>
+                <constraint firstAttribute="bottom" secondItem="t7Q-bJ-D7L" secondAttribute="bottom" constant="29" id="VS6-uc-TDp"/>
+                <constraint firstItem="eZY-jb-DRW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cs2-fu-5sJ"/>
+                <constraint firstItem="3Ek-g6-1Kj" firstAttribute="centerX" secondItem="eZY-jb-DRW" secondAttribute="centerX" id="fIC-7v-fdZ"/>
+                <constraint firstAttribute="trailing" secondItem="eZY-jb-DRW" secondAttribute="trailing" id="jXM-Ia-odN"/>
+                <constraint firstAttribute="bottom" secondItem="eZY-jb-DRW" secondAttribute="bottom" id="lQL-af-eIE"/>
+                <constraint firstItem="eZY-jb-DRW" firstAttribute="centerY" secondItem="3Ek-g6-1Kj" secondAttribute="centerY" constant="47.5" id="u9R-15-fN0"/>
+                <constraint firstItem="WhP-qR-LSe" firstAttribute="centerX" secondItem="t7Q-bJ-D7L" secondAttribute="centerX" id="ybD-q2-7t9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="515" y="324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_splashAppName.png" width="722" height="130"/>
+        <image name="img_splashBackground.png" width="1536" height="2048"/>
+        <image name="img_splashCopyright.png" width="552" height="49"/>
+        <image name="img_splashLogo.png" width="740" height="740"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
